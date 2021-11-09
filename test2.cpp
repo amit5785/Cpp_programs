@@ -1,8 +1,9 @@
+/*
 #include<stdio.h>
 #include<iostream>
 using namespace std;
 #include<fstream>
-/*int main()
+int main()
 {
    ifstream fin;
    fin.open("amit.txt",ios::in);
@@ -13,7 +14,7 @@ using namespace std;
    cout<<ch;
    cout<<fin.tellg()<<endl;
    return 0;
-}*/
+}
 class A
 {
 	public :
@@ -30,4 +31,21 @@ int main()
 {
 	A obj;
 	return 0;
+}
+*/
+#include<bits/stdc++.h>
+using namespace std;
+int masked(string s)
+    {
+        int t=0;
+        for(auto i:s)
+        {
+            t=t|(1<<(i-'a'));
+        }
+        return t;
+    }
+int main()
+{
+  cout<<masked("gaswxyz");
+   return 0;
 }
