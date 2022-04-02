@@ -33,19 +33,35 @@ int main()
 	return 0;
 }
 */
-#include<bits/stdc++.h>
+// #include<bits/stdc++.h>
+// using namespace std;
+// int masked(string s)
+//     {
+//         int t=0;
+//         for(auto i:s)
+//         {
+//             t=t|(1<<(i-'a'));
+//         }
+//         return t;
+//     }
+// int main()
+// {
+//   cout<<masked("gaswxyz");
+//    return 0;
+// }
+
+#include<iostream>
 using namespace std;
-int masked(string s)
-    {
-        int t=0;
-        for(auto i:s)
-        {
-            t=t|(1<<(i-'a'));
-        }
-        return t;
-    }
+
 int main()
 {
-  cout<<masked("gaswxyz");
-   return 0;
+    for(int i=0;i<100;i++)
+    {
+        cout<<0<<',';
+    }
+    for(int i=0;i<100;i++)
+    {
+        cout<<1<<',';
+    }
+    return 0;
 }
