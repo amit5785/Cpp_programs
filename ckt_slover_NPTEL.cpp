@@ -40,6 +40,7 @@ struct Button{
 
 
     	  void addNode(){
+    	  cout<<"Amit MathRep"<<endl;
 
     	    A.push_back(vector<double>(A.size(), 0));  // all 0 row
 
@@ -161,6 +162,7 @@ struct Button{
 	  void addNode(){
 
         int vclick = getClick();
+        cout<<"Amit Kumar Singh convas content"<<endl;
 
     	    Nptr.push_back(new Node(vclick, Nptr.size())); // index of node
 
@@ -170,12 +172,20 @@ struct Button{
 
     	  int selectNode(){
 
+
     	    int click=getClick();
 
     	    for(size_t i=0; i<Nptr.size(); i++)
+    	    {
+    	    if(Nptr[i]->in(click))
+    	    {
+    	    cout<<"Amit "<<i<<endl;
+    	    return i;
+    	    }
+    	    }
 
-	      if(Nptr[i]->in(click)) return i;
 
+cout<<"Amit -1"<<endl;
        return -1;
 
    	  }
