@@ -23,7 +23,7 @@ int main()
         num[i]+=1; 
       }
     }
-  }
+  } 
   sort(num.begin(),num.end());
   for(auto i:num)
   {
