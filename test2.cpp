@@ -50,18 +50,31 @@ int main()
 //    return 0;
 // }
 
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+
+// int main()
+// {
+//     for(int i=0;i<100;i++)
+//     {
+//         cout<<0<<',';
+//     }
+//     for(int i=0;i<100;i++)
+//     {
+//         cout<<1<<',';
+//     }
+//     return 0;
+// }
+
+#include <bits/stdc++.h>
+
 using namespace std;
 
 int main()
 {
-    for(int i=0;i<100;i++)
-    {
-        cout<<0<<',';
-    }
-    for(int i=0;i<100;i++)
-    {
-        cout<<1<<',';
-    }
+    for(int i=0;i<100000;i++)
+   {
+       cout<<i<<',';
+   }
     return 0;
 }
